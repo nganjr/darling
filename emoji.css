@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.head {
+  padding: 20px;
+  background-color: lightsteelblue;
+  height: max-content;
+  border-radius: 25px;
+  text-shadow: 9px 7px 4px rgba(23, 13, 204, 0.5);
+}
+
+.ask {
+  color: #2962ff;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.gif {
+  border-radius: 15px;
+  display: flex;
+  justify-self: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn1 {
+  border-radius: 25px;
+  height: 30px;
+  border: 1px solid white; /* Added border property */
+  background-color: lightsteelblue;
+  border-color: lightsteelblue;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.btn1:hover {
+  cursor: pointer;
+  color: #9a9fa2; /* Changed text color on hover */
+}
+
+.btn2 {
+  border-radius: 25px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  transition: all 0.2s ease;
+  border: 1px solid lightsteelblue;
+  background-color: lightsteelblue;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn2:hover {
+  cursor: pointer;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #3498db;
+}

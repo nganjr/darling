@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="emoji.css" />
+    <style>
+      /* Add some styling for positioning the button */
+      .btn2 {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <center>
+        <div class="ask">DARLING, WANNA GO OUT WITH ME 😓?</div>
+      </center>
+      <div class="container">
+        <div class="gif">
+          <img
+            src="https://i.pinimg.com/originals/d6/55/25/d65525d823d2a589c87c51a65744c1dc.gif"
+            alt="no gif 💻"
+          />
+        </div>
+        <div class="buttons">
+          <button
+            class="btn2"
+            id="noButton"
+            onmouseover="moveAway(event)"
+            style="position: absolute"
+          >
+            NO
+          </button>
+          <button class="btn1" id="nextpage">
+            <a href="yes.html"> YES </a>
+          </button>
+          <script>
+            function moveAway(event) {
+              // Get the button element
+              var button = document.getElementById("noButton");
+
+              var distance = 50;
+
+              // Calculate new coordinates based on the pointer position
+              var rect = button.getBoundingClientRect();
+              var offsetX = event.clientX - rect.left;
+              var offsetY = event.clientY - rect.top;
+
+              // Calculate new position away from the pointer in four directions
+              var newLeft =
+                offsetX < rect.width / 2
+                  ? rect.left - distance
+                  : rect.right + distance;
+              var newTop =
+                offsetY < rect.height / 2
+                  ? rect.top - distance
+                  : rect.bottom + distance;
+
+              // Set the new position
+              button.style.left = newLeft + "px";
+              button.style.top = newTop + "px";
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
